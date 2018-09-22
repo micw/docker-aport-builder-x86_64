@@ -13,3 +13,6 @@ RUN apk add alpine-sdk lua-aports && \
     chmod a+w /var/cache/distfiles
 
 ADD build.sh /build.sh
+
+ENTRYPOINT ["/build.sh"]
+
